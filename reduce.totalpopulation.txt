@@ -1,0 +1,16 @@
+
+var request = new XMLHttpRequest();
+request.open('GET',"https://restcountries.com/v3.1/all",true);
+request.send();
+request.onload= function(){
+  
+
+   var result=JSON.parse(request.response)
+   var printdata = result.reduce((preval,curval) => {
+    if(typeof preval==='object'){
+       return preval.population + curval.population;
+    } return preval+curval.population;
+  }); 
+  console.log(printdata)
+};
+

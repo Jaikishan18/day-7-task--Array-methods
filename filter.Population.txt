@@ -1,0 +1,12 @@
+var request = new XMLHttpRequest();
+request.open('GET','https://restcountries.eu/rest/v2/all',true);
+request.send();
+request.onload = function(){
+    var request= JSON.parse(this.response);
+    var printdata = request.filter((data)=>{
+         if(data.population<200000)
+         return data.population;
+       
+} )
+ console.log(printdata);
+}
