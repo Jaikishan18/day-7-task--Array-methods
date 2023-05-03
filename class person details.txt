@@ -1,0 +1,20 @@
+class person{
+  constructor(Name='',Age='',FatherName='',MotherName='', Resident='',SchoolName= '',CollegeName='',Degree=''){
+  
+  this.Name=Name;
+  this.Age=Age;
+  this.FatherName=FatherName;
+  this.MotherName=MotherName;
+  this.Resident= Resident;
+  this.SchoolName=SchoolName;
+  this.CollegeName=CollegeName;
+  this.Degree=Degree;
+ 
+  
+  }
+
+  
+}
+ const kishan= new person('kishan','22','viyas','Indu','paramakudi','xyz school','lkg college','BE')
+ 
+ console.log(kishan)

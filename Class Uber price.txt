@@ -1,0 +1,27 @@
+class uber{
+   constructor(CurrentLocation,EnterDestination,noOfkm,price,noOfpeopels){
+   
+            this.CurrentLocation = CurrentLocation;
+            this.EnterDestination = EnterDestination;
+            this.noOfkm =noOfkm;
+            this.price = price ;
+            this.noOfpeoples= noOfpeopels
+       }
+       
+      
+       
+       Price(){
+         if(this.noOfpeoples<=3){
+              return  this.noOfkm * this.price
+                }
+          else{
+             console.log("not allowed")
+              }
+          }
+      
+      } 
+      
+      const uberprice = new uber("Tambaram","Gindy",15,10,2)
+      
+      
+      console.log(uberprice.Price())
